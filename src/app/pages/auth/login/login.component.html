@@ -1,1 +1,51 @@
-<p>login works!</p>
+<div class="vh-100 d-flex bg-light-violet">
+	<div class="splash-container my-auto">
+		<div class="card">
+			<div class="card-header text-center">
+				<h1 class="text-primary text-uppercase font-weight-bold mb-0">{{'app_name' | translate}}</h1>
+			</div>
+			<div class="card-body">
+				<form [formGroup]="form" (ngSubmit)="onSubmit()">
+					<div class="input-group">
+						<input
+							id="username"
+							formControlName="username"
+							class="form-control form-control-lg"
+							type="text"
+							placeholder="{{'label.username' | translate}}"
+							autocomplete="off" />
+						<div class="input-group-append">
+							<div class="input-group-text">
+								<span class="fas fa-user"></span>
+							</div>
+						</div>
+					</div>
+					<div class="input-group mt-3">
+						<input
+							id="password"
+							formControlName="password"
+							class="form-control form-control-lg"
+							type="password"
+							placeholder="{{'label.password' | translate}}" />
+						<div class="input-group-append">
+							<div class="input-group-text">
+								<span class="fas fa-lock"></span>
+							</div>
+						</div>
+					</div>
+					<div class="input-group mt-3">
+						<label class="custom-control custom-checkbox">
+							<input
+								id="remember_me"
+								formControlName="remember_me"
+								class="custom-control-input"
+								type="checkbox" />
+							<label class="custom-control-label" for="remember_me">{{'label.remember_me' | translate}}</label>
+						</label>
+					</div>
+					<button type="submit" class="btn btn-primary btn-lg btn-block mt-2">{{'label.login' | translate}}</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

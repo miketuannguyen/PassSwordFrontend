@@ -2,6 +2,13 @@
     "app_name": "PassSword",
     "label": {
         "page_not_found": "Page Not Found",
-        "back_to_homepage": "Back to homepage"
-    }
+        "back_to_homepage": "Back to homepage",
+		"username": "Username",
+		"password": "Password",
+		"remember_me": "Remember Me",
+		"login": "Login"
+    },
+	"validation": {
+		"required": "{{field}} is required."
+	}
 }
